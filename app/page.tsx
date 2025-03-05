@@ -1,7 +1,7 @@
 "use client";
 
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import urlHistory from "@/utils/url-history.json";
 
 const urlShortener = async (url: string) => {
@@ -70,7 +70,7 @@ const Home = () => {
           />
           <button
             onClick={() => {
-              // urlShortener(urlValue);
+              urlShortener(urlValue);
               setHistory([
                 ...history,
                 {
